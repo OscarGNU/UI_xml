@@ -11,11 +11,11 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        // Encuentra el botón (o cualquier otro componente) para navegar al dashboard
+
         val buttonToDashboard = findViewById<Button>(R.id.LoginBtn)
 
         buttonToDashboard.setOnClickListener {
-            // Al hacer clic, pasamos a la actividad del dashboard
+
             val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
         }
